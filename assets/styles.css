@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+    flex-direction: column;
+}
+
+/* SAVE OUR DATE Style */
+.save-the-date {
+    color: #e39696;
+    font-family: GreatVibes, cursive;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Date Style */
+.date {
+    color: #e39696;
+    font-family: 'GreatVibes', cursive;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.card h1 {
+    font-size: 36px;
+    color: #b03a2e;
+}
+
+.card p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.card button {
+    background-color: #b03a2e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.card button:hover {
+    background-color: #8b2d22;
+}
+
+@media (max-width: 768px) {
+    .save-the-date {
+        font-size: 36px;
+    }
+
+    .date {
+        font-size: 48px;
+    }
+
+    .card h1 {
+        font-size: 28px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+}
