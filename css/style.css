@@ -5,17 +5,61 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'DFVNSerenityScript';
+  src: url('../fonts/DFVN Simple Serenity Script.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DFVNSerenitySerif';
+  src: url('../fonts/DFVN Simple Serenity Serif.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BTSuave-Bold';
+  src: url('../fonts/BTSuave-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BTSuave-Medium';
+  src: url('../fonts/BTSuave-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BTSuave-Regular';
+  src: url('../fonts/BTSuave-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BohemeFloral';
+  src: url('../fonts/DFVN Boheme Floral.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* =======================================================
 *
 * 	Template Style 
 *
 * ======================================================= */
 body {
-  font-family: "Work Sans", Arial, sans-serif;
+  /*font-family: "Work Sans", Arial, sans-serif;*/
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #828282;
+  color: #fff;
   background: #fff;
 }
 
@@ -64,24 +108,65 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Work Sans", Arial, sans-serif;
+  /*font-family: "Work Sans", Arial, sans-serif;*/
+  font-family: 'DFVNSerenityScript', cursive;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
 
+.ngay26thang10{
+  font-family: "Playfair Display", serif;
+  font-size: 30px !important;
+  font-weight: normal
+}
+
+.moibanden {
+  font-family: "Playfair Display", serif !important;
+  font-size: 20px !important;
+  font-weight: normal !important;
+  color: #828282;
+}
+
+.mota {
+  font-family: "Playfair Display", serif !important;
+  font-size: 15px !important;
+  font-weight: normal !important;
+  color: #828282;
+}
+
+.WeLoveEachOther {
+  font-family: "Playfair Display", serif;
+  font-size: 20px !important;
+  font-weight: normal
+}
+
+.quote {
+  font-size: 50px !important; /* Kích thước lớn hơn */
+  font-family: "Sacramento", Arial, serif;
+  color: #F14E95 !important; /* Màu đỏ hoặc bất kỳ màu nào bạn muốn */
+  font-weight: normal !important; /* Đậm hơn (tuỳ chọn) */
+}
+
+.chutinh {
+  font-size: 25px !important;
+  font-family: 'BTSuave-Medium';
+  color: #F14E95 !important;
+  font-weight: normal !important; 
+}
+
 .restaurent {
-  font-family: "Handlee", cursive;
+  font-family: 'BTSuave-Regular';
   color: #F14E95;
   font-size: 30px;
-  font-weight: 900
+  font-weight: normal
 }
 
-.couple-half h3 {
-  font-family: "Birthstone Bounce", cursive;
-  color: #F14E95;
-  font-size: 30px;
+.ngay {
+  font-family: "Playfair Display", serif !important;
+  font-size: 20px !important;
+  font-weight: normal !important;
+  color: #828282;
 }
-
 
 ::-webkit-selection {
   color: #fff;
@@ -113,11 +198,12 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 .fh5co-nav #fh5co-logo {
-  font-size: 40px;
+  font-size: 60px;
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  /*font-family: "Sacramento", Arial, serif;*/
+  font-family: 'DFVNSerenityScript', cursive;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -591,6 +677,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .timeline-title {
   margin-top: 0;
+  font-size: 30px !important;
+  font-family: 'BTSuave-Regular', sans-serif;
+  color: #F14E95 !important;
+  font-weight: normal !important; 
 }
 
 .date {
@@ -857,7 +947,8 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  /*font-family: "Sacramento", Arial, serif;*/
+  font-family: 'DFVNSerenitySerif', sans-serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -876,7 +967,7 @@ form label {
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
 .fh5co-cover .display-tc h2 {
-  font-size: 20px;
+  font-size: 100px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -1068,6 +1159,13 @@ form label {
   }
 }
 
+.bigger-text {
+  font-size: 100px !important;
+  font-weight: normal !important; /* Tăng kích thước font chữ lên 120% */
+  line-height: 1; /* Đảm bảo chiều cao dòng giống với phần còn lại */
+  vertical-align: middle; /* Giữ cho số không bị lệch hàng */
+}
+
 .couple-half {
   width: 50%;
   float: left;
@@ -1078,10 +1176,13 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Birthstone Bounce", cursive;
+  /*font-family: "Birthstone Bounce", cursive;*/
+  font-family: 'BohemeFloral', cursive;
   color: #F14E95;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 550;
 }
+
 .couple-half .groom, .couple-half .bride {
   float: left;
   -webkit-border-radius: 50%;
@@ -1195,7 +1296,8 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
+  /*font-family: "Sacramento", Arial, serif;*/
+  font-family: 'DFVNSerenitySerif', sans-serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
@@ -1659,7 +1761,8 @@ form label {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Work Sans", Arial, sans-serif;
+  /*font-family: "Work Sans", Arial, sans-serif;*/
+  font-family: "Playfair Display", serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
