@@ -388,22 +388,16 @@
 						<form id="attendanceForm" class="form-inline">
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
-									<label for="name" class="sr-only">Name</label>
-									<input type="text" class="form-control" id="name" placeholder="Name" required>
+									<input type="text" class="form-control" id="name" placeholder="Tên bạn là..." required>
 								</div>
 							</div>
+
 							<div class="col-md-4 col-sm-4">
 								<div class="form-group">
-									<label for="relation" class="sr-only">Relation</label>
-									<select class="form-control" id="relation" required>
-										<option value="" disabled selected>Chọn nhóm của bạn</option>
-										<option value="Họ hàng chú rễ">Nhà Trai</option>
-										<option value="Họ hàng cô dâu">Nhà Gái</option>
-										<option value="Bạn Dâu">Bạn "Dâu"</option>
-										<option value="Bạn Rễ">Bạn "Rể"</option>
-									</select>
+									<input type="text" class="form-control" id="note" placeholder="Đôi lời nhắn nhủ để lại đây..." required>
 								</div>
 							</div>
+							
 							<div class="col-md-4 col-sm-4">
 								<button type="submit" class="btn btn-default btn-block">Xác nhận</button>
 							</div>
@@ -494,14 +488,14 @@
 
 				// Lấy giá trị của Name và sự lựa chọn từ dropdown
 				var name = document.getElementById("name").value;
-				var relation = document.getElementById("relation").value;
+				var note = document.getElementById("note").value;
 
 				// Kiểm tra nếu cả hai trường đã được điền
-				if (name && relation) {
+				if (name && note) {
 					// Gửi dữ liệu đến Power Automate
 					var data = {
 						name: name,
-						relation: relation
+						note: note
 					};
 
 					// URL của Power Automate
